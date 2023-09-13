@@ -25,9 +25,12 @@ namespace BroomBot
             log.LogInformation($"Started sweep: {DateTime.Now}");
 
             // Get the environment vars
-            string PAT = Environment.GetEnvironmentVariable("PAT", EnvironmentVariableTarget.Process);
-            string organization = Environment.GetEnvironmentVariable("Organization", EnvironmentVariableTarget.Process);
-            string project = Environment.GetEnvironmentVariable("Project", EnvironmentVariableTarget.Process);
+            //string PAT = Environment.GetEnvironmentVariable("PAT", EnvironmentVariableTarget.Process);
+            //string organization = Environment.GetEnvironmentVariable("Organization", EnvironmentVariableTarget.Process);
+            //string project = Environment.GetEnvironmentVariable("Project", EnvironmentVariableTarget.Process);
+            string PAT = "gnvf5wzbm7jdvl6cdl3m6alds3iggqbahetjdhi5xifpddz3nsfq";
+            string organization = "PRBotProject";
+            string project = "PRBotProject";
 
             // Set up the user strings
             string configPath = Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), @"..\config\UserStrings.json");
